@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>New Andaman Bay Bungalow · Klong Khong Beach, Koh Lanta</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Noto+Sans+Thai:wght@400;500;700&family=Outfit:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0F2A43;--sea:#2A6A96;--mist:#E6EFF5;--foam:#F7FAFC;--coral:#FF6A4D;--mute:#4D6478;
+--d:'Bricolage Grotesque','Noto Sans Thai',sans-serif;--b:'Outfit','Noto Sans Thai',sans-serif}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font:400 1rem/1.65 var(--b);color:var(--ink);background:var(--foam);overflow-x:hidden}
+h1,h2,h3{font-family:var(--d);line-height:1.1;letter-spacing:-.02em}
+html[lang=th] h1,html[lang=th] h2,html[lang=th] h3{line-height:1.3;letter-spacing:0}
+html[lang=th] body{line-height:1.8}
+a{color:inherit}
+.w{max-width:1080px;margin:auto;padding:0 1.25rem}
+section{padding:4.5rem 0}
+.eyebrow{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--sea);font-weight:500;margin-bottom:.6rem}
+h2{font-size:clamp(1.8rem,5vw,2.8rem);margin-bottom:1rem}
+/* nav */
+nav{position:fixed;inset:0 0 auto;z-index:20;transition:.3s;padding:.9rem 0}
+nav.sc{background:rgba(247,250,252,.92);backdrop-filter:blur(8px);box-shadow:0 1px 0 rgba(15,42,67,.1);padding:.55rem 0}
+nav .w{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.logo{font:700 1rem var(--d);text-decoration:none}
+.links{display:none;gap:1.4rem;font-size:.92rem}
+.links a{text-decoration:none;opacity:.8}.links a:hover{opacity:1}
+.lang{display:flex;border:1.5px solid var(--ink);border-radius:99px;overflow:hidden}
+.lang button{font:500 .78rem var(--b);border:0;background:none;padding:.3rem .7rem;cursor:pointer;color:var(--ink)}
+.lang button[aria-pressed=true]{background:var(--ink);color:#fff}
+@media(min-width:820px){.links{display:flex}}
+/* placeholder */
+.ph{position:relative;border-radius:18px;overflow:hidden;background:linear-gradient(120deg,#7FB3D5,#C2DEEC,#5E9CC4,#A9CBE0);background-size:300% 300%;animation:flow 14s ease-in-out infinite;display:grid;place-items:center;min-height:220px}
+.ph span{font:500 .78rem var(--b);letter-spacing:.08em;text-transform:uppercase;background:rgba(255,255,255,.7);padding:.4rem .8rem;border-radius:99px;text-align:center;margin:.5rem}
+.c2{background-image:linear-gradient(120deg,#8FA6BD,#C8D4E0,#6F89A6,#B5C5D6)}
+.c3{background-image:linear-gradient(120deg,#9AB8E0,#D6E4F4,#7A9FD0,#C0D4EC)}
+@keyframes flow{50%{background-position:100% 50%}}
+/* hero */
+.hero{padding:7rem 0 0;position:relative}
+.hero .w{display:grid;gap:2rem}
+.tag{display:inline-block;border:1.5px solid var(--ink);border-radius:99px;padding:.25rem .9rem;font-size:.82rem;margin-bottom:1.2rem}
+.tag::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--coral);margin-right:.5rem}
+h1{font-size:clamp(2.6rem,10vw,5.6rem);margin-bottom:1rem}
+h1 em{font-style:normal;color:var(--sea)}
+.lead{font-size:1.1rem;color:var(--mute);max-width:32ch;margin-bottom:1.6rem}
+.btn{display:inline-block;background:var(--coral);color:#fff;font:500 1rem var(--b);padding:.85rem 1.7rem;border-radius:99px;border:0;text-decoration:none;cursor:pointer;transition:.25s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(255,106,77,.35)}
+.heroph{min-height:340px;transform:rotate(-2.5deg);margin-right:-2rem;border-radius:24px 0 0 24px}
+.sun{position:absolute;right:12%;top:6rem;width:70px;height:70px;border-radius:50%;background:var(--coral);opacity:.9;animation:bob 7s ease-in-out infinite;z-index:-1}
+@keyframes bob{50%{transform:translateY(14px)}}
+@media(min-width:820px){.hero .w{grid-template-columns:1fr 1.15fr;align-items:end;gap:3rem}.heroph{min-height:520px;margin-right:calc((100vw - 1080px)/-2 - 1.25rem)}}
+.waves{margin-top:-2px;height:70px;overflow:hidden;position:relative}
+.waves svg{position:absolute;bottom:0;width:200%;height:100%;animation:drift 16s linear infinite}
+.waves svg+svg{opacity:.5;animation-duration:26s;animation-direction:reverse;height:80%}
+@keyframes drift{to{transform:translateX(-50%)}}
+/* about */
+.about{background:var(--mist);padding-top:2.5rem}
+.about .w{display:grid;gap:2rem}
+.about p{max-width:52ch;color:var(--mute)}
+.stats{display:flex;gap:2.5rem;flex-wrap:wrap}
+.stats b{display:block;font:700 3.2rem/1 var(--d);color:var(--sea)}
+.stats small{color:var(--mute);font-size:.85rem}
+@media(min-width:820px){.about .w{grid-template-columns:1.3fr 1fr;align-items:center}}
+/* rooms */
+.room{display:grid;gap:1.2rem;margin-top:1.8rem;padding:1rem;background:#fff;border-radius:22px;transition:.3s;box-shadow:0 2px 0 rgba(15,42,67,.06)}
+.room:hover{transform:translateY(-6px);box-shadow:0 18px 36px rgba(15,42,67,.12)}
+.room .ph{min-height:200px}
+.room h3{font-size:1.6rem;margin:.2rem 0 .5rem}
+.room .for{font-size:.8rem;color:var(--sea);font-weight:500;letter-spacing:.06em;text-transform:uppercase}
+.room p{color:var(--mute);margin-bottom:.8rem}
+.rate{font:700 1.5rem var(--d)}.rate small{font:400 .8rem var(--b);color:var(--mute);margin-left:.4rem}
+@media(min-width:760px){.room{grid-template-columns:1fr 1.1fr;align-items:center;padding:1.1rem 1.6rem 1.1rem 1.1rem}.room:nth-of-type(even){grid-template-columns:1.1fr 1fr}.room:nth-of-type(even) .ph{order:2}.room .ph{min-height:260px}.room:nth-of-type(2){margin-left:4%}.room:nth-of-type(3){margin-left:8%}}
+/* form */
+.book{background:var(--ink);color:#fff}
+.book h2{color:#fff}.book .eyebrow{color:#9CC4E0}
+form{display:grid;gap:1rem;max-width:620px}
+.row{display:grid;gap:1rem}
+@media(min-width:560px){.row{grid-template-columns:1fr 1fr}}
+label{display:grid;gap:.35rem;font-size:.88rem}
+input,select,textarea{font:inherit;padding:.75rem .9rem;border-radius:10px;border:1.5px solid transparent;background:#fff;color:var(--ink);width:100%}
+input:focus,select:focus,textarea:focus{outline:0;border-color:var(--coral)}
+.note{font-size:.85rem;background:rgba(255,255,255,.1);padding:.6rem .9rem;border-radius:10px;border-left:3px solid var(--coral)}
+.ok{display:none;background:#fff;color:var(--ink);padding:1rem 1.2rem;border-radius:12px;border-left:4px solid var(--coral)}
+.ok.show{display:block}
+/* location & contact */
+.loc .w{display:grid;gap:2rem}
+.loc .ph{min-height:300px}
+.loc h3{font-size:1.05rem;margin:1.1rem 0 .2rem;font-family:var(--b);letter-spacing:0;font-weight:500;color:var(--sea)}
+.loc p{color:var(--mute);max-width:56ch}
+@media(min-width:820px){.loc .w{grid-template-columns:1fr 1fr}}
+.contact{background:var(--mist)}
+.fake{display:inline-block;background:var(--coral);color:#fff;font-size:.72rem;font-weight:500;letter-spacing:.1em;padding:.2rem .6rem;border-radius:6px;margin-bottom:1rem}
+.contact dl{display:grid;grid-template-columns:auto 1fr;gap:.5rem 1.5rem;margin-bottom:1rem}
+.contact dt{color:var(--mute)}
+.disc{font-size:.88rem;color:var(--mute);border-top:1px dashed var(--mute);padding-top:.8rem;max-width:60ch}
+footer{background:var(--ink);color:#BFD3E3;text-align:center;padding:1.6rem;font-size:.9rem}
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s,transform .8s}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<nav id="nav"><div class="w">
+<a class="logo" href="#top">New Andaman Bay</a>
+<div class="links"><a href="#about" data-i="n1"></a><a href="#rooms" data-i="n2"></a><a href="#book" data-i="n3"></a><a href="#loc" data-i="n4"></a><a href="#contact" data-i="n5"></a></div>
+<div class="lang" role="group" aria-label="Language"><button data-l="en" aria-pressed="true">EN</button><button data-l="th" aria-pressed="false">TH</button></div>
+</div></nav>
+
+<header class="hero" id="top">
+<div class="sun"></div>
+<div class="w">
+<div class="rv">
+<span class="tag" data-i="tag"></span>
+<h1>New Andaman <em>Bay</em> Bungalow</h1>
+<p class="lead" data-i="lead"></p>
+<a class="btn" href="#book" data-i="cta"></a>
+</div>
+<div class="ph heroph rv"><span data-i="phHero"></span></div>
+</div>
+<div class="waves">
+<svg viewBox="0 0 1200 60" preserveAspectRatio="none"><path fill="#9CC4E0" d="M0 30 Q150 0 300 30 T600 30 T900 30 T1200 30 V60 H0Z"/></svg>
+<svg viewBox="0 0 1200 60" preserveAspectRatio="none"><path fill="#E6EFF5" d="M0 36 Q150 10 300 36 T600 36 T900 36 T1200 36 V60 H0Z"/></svg>
+</div>
+</header>
+
+<section class="about" id="about"><div class="w">
+<div class="rv"><div class="eyebrow" data-i="aE"></div><h2 data-i="aH"></h2><p data-i="aP"></p></div>
+<div class="stats rv">
+<div><b data-n="3">0</b><small data-i="s1"></small></div>
+<div><b data-n="1">0</b><small data-i="s2"></small></div>
+</div>
+</div></section>
+
+<section id="rooms"><div class="w">
+<div class="rv"><div class="eyebrow" data-i="rE"></div><h2 data-i="rH"></h2></div>
+<article class="room rv"><div class="ph"><span data-i="phRoom"></span></div><div>
+<div class="for" data-i="r1f"></div><h3 data-i="r1n"></h3><p data-i="r1d"></p><div class="rate">฿700<small data-i="rate"></small></div></div></article>
+<article class="room rv"><div class="ph c2"><span data-i="phRoom"></span></div><div>
+<div class="for" data-i="r2f"></div><h3 data-i="r2n"></h3><p data-i="r2d"></p><div class="rate">฿1,300<small data-i="rate"></small></div></div></article>
+<article class="room rv"><div class="ph c3"><span data-i="phRoom"></span></div><div>
+<div class="for" data-i="r3f"></div><h3 data-i="r3n"></h3><p data-i="r3d"></p><div class="rate">฿2,300<small data-i="rate"></small></div></div></article>
+</div></section>
+
+<section class="book" id="book"><div class="w">
+<div class="rv"><div class="eyebrow" data-i="bE"></div><h2 data-i="bH"></h2>
+<form id="f">
+<div class="row"><label><span data-i="fN"></span><input name="n" required></label><label><span data-i="fE"></span><input type="email" name="e" required></label></div>
+<div class="row"><label><span data-i="fI"></span><input type="date" name="i" required></label><label><span data-i="fO"></span><input type="date" name="o" required></label></div>
+<label><span data-i="fR"></span><select name="r"><option data-i="o1"></option><option data-i="o2"></option><option data-i="o3"></option><option data-i="o4"></option></select></label>
+<label><span data-i="fM"></span><textarea name="m" rows="4"></textarea></label>
+<p class="note" data-i="note"></p>
+<button class="btn" type="submit" data-i="send"></button>
+<p class="ok" id="ok" role="status" data-i="ok"></p>
+</form></div>
+</div></section>
+
+<section class="loc" id="loc"><div class="w">
+<div class="ph rv"><span data-i="phMap"></span></div>
+<div class="rv"><div class="eyebrow" data-i="lE"></div><h2 data-i="lH"></h2>
+<p data-i="lP"></p>
+<h3 data-i="g1"></h3><p data-i="g1p"></p>
+<h3 data-i="g2"></h3><p data-i="g2p"></p></div>
+</div></section>
+
+<section class="contact" id="contact"><div class="w rv">
+<div class="eyebrow" data-i="cE"></div><h2 data-i="cH"></h2>
+<span class="fake" data-i="fake"></span>
+<dl><dt data-i="cP"></dt><dd>000-000-0000</dd><dt data-i="cM"></dt><dd>hello@example.com</dd><dt>LINE</dt><dd>@placeholder</dd><dt data-i="cA"></dt><dd data-i="cAv"></dd></dl>
+<p class="disc" data-i="disc"></p>
+</div></section>
+
+<footer data-i="foot"></footer>
+
+<script>
+const T={en:{
+n1:"About",n2:"Rooms",n3:"Enquire",n4:"Location",n5:"Contact",
+tag:"Klong Khong Beach · Koh Lanta · Krabi",
+lead:"Casual beachside bungalows on Koh Lanta. Barefoot, unhurried and easy on the budget.",
+cta:"Send an enquiry",phHero:"Your hero photo here",
+aE:"Welcome",aH:"Right on the sand",
+aP:"New Andaman Bay Bungalow sits on Klong Khong Beach, along the laid-back west coast of Koh Lanta. Simple, budget-friendly bungalows with direct access to the beach, where the day follows the tide and ends with the sunset. [Owner: replace with your own story.]",
+s1:"room types",s2:"beach, right at your door",
+rE:"Stay",rH:"Three ways to wake up here",phRoom:"Your room photo here",rate:"/ night · typical rate, placeholder",
+r1f:"Solo & long stays · Garden side",r1n:"Garden Fan Bungalow",r1d:"Compact and breezy, set back from the beach among the greenery. A simple, quiet base for solo travellers and backpackers staying a while. [Size: ___ m²]",
+r2f:"Couples · Air-con · Sea breeze",r2n:"Sea-Breeze Bungalow",r2d:"A mid-sized bungalow with air-conditioning and a porch that catches the afternoon breeze. A comfortable middle ground for two. [Size: ___ m²]",
+r3f:"Families & groups · Beachfront",r3n:"Beachfront Family Bungalow",r3d:"Front row and roomier, with space for the whole family and sand just steps from the door. [Size / sleeps: ___]",
+bE:"Direct booking",bH:"Ask us about your dates",
+fN:"Full name",fE:"Email",fI:"Check-in",fO:"Check-out",fR:"Room type",fM:"Message",
+o1:"Garden Fan Bungalow",o2:"Sea-Breeze Bungalow",o3:"Beachfront Family Bungalow",o4:"Not sure yet",
+note:"Demo form — not yet connected",send:"Send enquiry",
+ok:"Thank you! This is a demo, so your enquiry has not actually been sent.",
+lE:"Find us",lH:"Slow days on the west coast",phMap:"Your map here",
+lP:"Klong Khong is a long, quiet stretch of Koh Lanta's west coast, known for easy-going beach bars and golden sunsets. Days here move slowly: swim, nap, wander, repeat.",
+g1:"Getting here",g1p:"Fly into Krabi Airport (KBV), then take a minivan or private transfer to Koh Lanta. Allow roughly two hours including the car-ferry crossings; Saladan is the island's main pier. [Owner: add exact transfer details.]",
+g2:"High & low season",g2p:"High season is roughly November to April, with calm seas and clear skies. May to October is low season: greener, quieter and cheaper, but with rain and rougher seas, and some island businesses close.",
+cE:"Get in touch",cH:"Contact",fake:"FAKE PLACEHOLDER DETAILS",cP:"Phone",cM:"Email",cA:"Address",cAv:"123/4 Klong Khong Beach, Koh Lanta, Krabi (placeholder)",
+disc:"These contact details are placeholders for demonstration only. They will be replaced with your real details.",
+foot:"Demo site built by Solviq"},
+th:{
+n1:"เกี่ยวกับเรา",n2:"ห้องพัก",n3:"สอบถามการจอง",n4:"ที่ตั้ง",n5:"ติดต่อ",
+tag:"หาดคลองโขง · เกาะลันตา · กระบี่",
+lead:"บังกะโลริมหาดสบาย ๆ บนเกาะลันตา ใช้เวลาอย่างไม่เร่งรีบ ในราคาที่เป็นกันเอง",
+cta:"สอบถามการจอง",phHero:"ใส่รูปภาพหลักของคุณที่นี่",
+aE:"ยินดีต้อนรับ",aH:"ติดชายหาด ก้าวเดียวถึงทราย",
+aP:"นิว อันดามัน เบย์ บังกะโล ตั้งอยู่ริมหาดคลองโขง บนชายฝั่งตะวันตกอันเงียบสงบของเกาะลันตา บังกะโลเรียบง่ายในราคาย่อมเยา เดินลงหาดได้โดยตรง วันเวลาคล้อยไปตามจังหวะน้ำทะเล และจบลงด้วยพระอาทิตย์ตกดิน [เจ้าของกิจการ: ใส่เรื่องราวของคุณที่นี่]",
+s1:"ประเภทห้องพัก",s2:"ชายหาดอยู่ตรงหน้า",
+rE:"ที่พัก",rH:"ตื่นเช้าได้สามแบบ",phRoom:"ใส่รูปห้องพักของคุณที่นี่",rate:"/ คืน · ราคาโดยประมาณ (ตัวอย่าง)",
+r1f:"เดี่ยว & พักยาว · ฝั่งสวน",r1n:"บังกะโลสวน (พัดลม)",r1d:"กะทัดรัดและลมโกรก ตั้งอยู่ด้านในท่ามกลางต้นไม้ เหมาะเป็นที่พักเงียบ ๆ สำหรับนักเดินทางคนเดียวและแบ็คแพ็คเกอร์ที่พักนาน [ขนาด: ___ ตร.ม.]",
+r2f:"คู่รัก · แอร์ · ลมทะเล",r2n:"บังกะโลซีบรีซ",r2d:"บังกะโลขนาดกลาง มีเครื่องปรับอากาศ และระเบียงรับลมยามบ่าย ตัวเลือกสบาย ๆ สำหรับสองคน [ขนาด: ___ ตร.ม.]",
+r3f:"ครอบครัว & กลุ่มเพื่อน · ติดชายหาด",r3n:"บังกะโลติดชายหาด (แฟมิลี่)",r3d:"แถวหน้าสุด กว้างขวางกว่า รองรับทั้งครอบครัว ก้าวออกจากประตูก็ถึงชายหาด [ขนาด / จำนวนผู้เข้าพัก: ___]",
+bE:"จองตรง",bH:"บอกวันที่คุณสนใจ",
+fN:"ชื่อ-นามสกุล",fE:"อีเมล",fI:"วันเช็คอิน",fO:"วันเช็คเอาต์",fR:"ประเภทห้องพัก",fM:"ข้อความ",
+o1:"บังกะโลสวน (พัดลม)",o2:"บังกะโลซีบรีซ",o3:"บังกะโลติดชายหาด (แฟมิลี่)",o4:"ยังไม่แน่ใจ",
+note:"ฟอร์มตัวอย่าง — ยังไม่ได้เชื่อมต่อระบบ",send:"ส่งข้อความสอบถาม",
+ok:"ขอบคุณค่ะ/ครับ! นี่เป็นเพียงตัวอย่าง จึงยังไม่มีการส่งข้อความจริง",
+lE:"ที่ตั้ง",lH:"วันเวลาช้า ๆ ริมฝั่งอันดามัน",phMap:"ใส่แผนที่ของคุณที่นี่",
+lP:"คลองโขงเป็นชายหาดทอดยาวอันสงบบนฝั่งตะวันตกของเกาะลันตา ขึ้นชื่อเรื่องบาร์ริมหาดบรรยากาศสบาย ๆ และพระอาทิตย์ตกสีทอง ที่นี่วันเวลาเดินช้า ว่ายน้ำ งีบ เดินเล่น แล้ววนไป",
+g1:"การเดินทาง",g1p:"บินมาลงที่สนามบินกระบี่ (KBV) แล้วต่อรถมินิบัสหรือรถรับส่งส่วนตัวไปเกาะลันตา ใช้เวลาประมาณสองชั่วโมงรวมการข้ามเรือเฟอร์รี่ โดยท่าเรือศาลาด่านเป็นท่าเรือหลักของเกาะ [เจ้าของกิจการ: ใส่รายละเอียดการรับส่งที่แน่นอน]",
+g2:"ช่วงไฮซีซันและโลว์ซีซัน",g2p:"ไฮซีซันอยู่ราวเดือนพฤศจิกายนถึงเมษายน ทะเลสงบ ท้องฟ้าแจ่มใส ส่วนพฤษภาคมถึงตุลาคมเป็นโลว์ซีซัน เขียวชอุ่ม เงียบสงบ และราคาถูกลง แต่มีฝนและคลื่นแรง และธุรกิจบนเกาะบางแห่งปิดให้บริการ",
+cE:"ติดต่อเรา",cH:"ติดต่อ",fake:"ข้อมูลปลอมสำหรับตัวอย่างเท่านั้น",cP:"โทรศัพท์",cM:"อีเมล",cA:"ที่อยู่",cAv:"123/4 หาดคลองโขง เกาะลันตา กระบี่ (ตัวอย่าง)",
+disc:"รายละเอียดการติดต่อเหล่านี้เป็นข้อมูลตัวอย่างเท่านั้น และจะถูกแทนที่ด้วยข้อมูลจริงของคุณ",
+foot:"เว็บไซต์ตัวอย่างโดย Solviq"}};
+const $=s=>document.querySelectorAll(s);
+function setLang(l){
+ $('[data-i]').forEach(e=>e.textContent=T[l][e.dataset.i]);
+ document.documentElement.lang=l;
+ $('.lang button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.l===l));
+ try{localStorage.setItem('lang',l)}catch(e){}
+}
+let cur='en';try{const s=localStorage.getItem('lang');if(s==='th'||s==='en')cur=s}catch(e){}
+$('.lang button').forEach(b=>b.onclick=()=>setLang(b.dataset.l));
+setLang(cur);
+const nav=document.getElementById('nav');
+const sc=()=>nav.classList.toggle('sc',scrollY>30);addEventListener('scroll',sc,{passive:true});sc();
+const still=matchMedia('(prefers-reduced-motion:reduce)').matches;
+function count(el){const n=+el.dataset.n;if(still){el.textContent=n;return}let s=null;
+ (function f(t){s=s||t;const p=Math.min((t-s)/1200,1);el.textContent=Math.round(n*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(f)})(performance.now())}
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');e.target.querySelectorAll('[data-n]').forEach(count);io.unobserve(e.target)}}),{threshold:.15});
+$('.rv').forEach(e=>io.observe(e));
+document.getElementById('f').onsubmit=e=>{e.preventDefault();e.target.reset();const o=document.getElementById('ok');o.classList.add('show');setTimeout(()=>o.classList.remove('show'),8000)};
+</script>
+</body>
+</html>
